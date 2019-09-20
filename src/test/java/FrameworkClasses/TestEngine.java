@@ -28,10 +28,11 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
-	 
+@Listeners(FrameworkClasses.CustomReport.class)
 public class TestEngine  
 {
 	static public WebDriver driver;
+	public static int RowSetter = 0;
 	
 	
 	
@@ -43,10 +44,7 @@ public class TestEngine
 	@BeforeSuite
 	public void Prerunsetup() throws IOException
 	{
-//		Runtime rt = Runtime.getRuntime();
-//		Process pr = rt.exec("Taskkill /IM Chrome.exe /F");
-//		pr = rt.exec("Taskkill /IM Chromedriver.exe /F");
-//								
+						
 	}
 	
 	
@@ -84,7 +82,8 @@ public class TestEngine
 		    	ArrayList<String> row = new ArrayList<String>();
 			    	for (int j= 0 ; j <= colNum-1; j++)
 			    	{
-			    		XSSFCell cell = sh1.getRow(i).getCell(j);			    					    		
+			    		XSSFCell cell = sh1.getRow(i).getCell(j);
+			    		RowSetter=i;
 						switch(cell.getCellType())
 						{
 				    		case (Cell.CELL_TYPE_STRING):
