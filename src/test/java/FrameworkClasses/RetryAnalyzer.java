@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 public class RetryAnalyzer implements IRetryAnalyzer{
 
 	int counter = 0;
-	int retryLimit = 4;
+	int retryLimit = 3;
 	
 	public boolean retry(ITestResult result) {
 		// TODO Auto-generated method stub
@@ -14,6 +14,7 @@ public class RetryAnalyzer implements IRetryAnalyzer{
 		
 		if(counter < retryLimit)
 		{
+			System.out.println("***Inside retry counter***"+counter);
 			counter++;
 			return true;
 		}

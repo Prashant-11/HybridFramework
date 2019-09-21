@@ -5,9 +5,9 @@
     <classes>
       <class name="FrameworkClasses.TestEngine">
         <methods>
-          <include name="Product_Sanity" invocation-numbers="1"/>
           <include name="Prerunsetup"/>
           <include name="PostExecution"/>
+          <include name="Scenarios" invocation-numbers="0 0 0 0 1"/>
           <include name="Setup"/>
         </methods>
       </class> <!-- FrameworkClasses.TestEngine -->

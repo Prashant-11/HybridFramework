@@ -28,6 +28,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 
+import junit.framework.Assert;
+
 @Listeners(FrameworkClasses.CustomReport.class)
 public class TestEngine  
 {
@@ -108,8 +110,7 @@ public class TestEngine
   }
 		
 	
-	 @Test(dataProvider = "DP_Flow")
-	 //, retryAnalyzer=RetryAnalyzer.class)
+	 @Test(dataProvider = "DP_Flow",retryAnalyzer=RetryAnalyzer.class)
 	 public void Scenarios(ArrayList<String> row) throws IOException, InterruptedException, AWTException 
 	 {				
 		System.out.println("Execution-->"+row.get(0));		
@@ -131,19 +132,21 @@ public class TestEngine
 		}
 				
 				
-		if(row.get(0).contains("Yes"))
+		if(row.get(1).contains("Yes"))
 		{
 			System.out.println("***Value before 4***"+row.get(4).toString());
 			//System.out.println("VE--Teampath>*(*(*"+Teampath);
-			switch(row.get(1)) 
+			switch(row.get(2)) 
 			{
 			case "ScenarioA":
 				System.out.println("***Inside Scenario A***");
+				Assert.fail();
 				//Call Test Method here
 				
 				break;
 			case "ScenarioB":
 				System.out.println("***Inside Scenario B***");	
+				Assert.fail();
 				
 				break;
         	   default :		        	

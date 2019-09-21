@@ -31,33 +31,82 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">2</td><td class="numi">1</td><td class="numi_attn">2</td><td class="numi">0</td><td class="numi">3.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">4.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="2">FrameworkClasses.TestEngine</td><td><a href="#m1"><b>Product_Sanity</b>  </a></td><td class="numi">1</td><td>1568948406448</td><td class="numi">13</td></tr><tr class="skippedodd"><td><a href="#m2"><b>Product_Sanity</b>  </a></td><td class="numi">1</td><td>1568948406448</td><td class="numi">13</td></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">FrameworkClasses.TestEngine</td><td><a href="#m3"><b>Product_Sanity</b>  </a></td><td class="numi">1</td><td>1568948406085</td><td class="numi">11</td></tr><tr class="passedodd"><td><a href="#m4"><b>Product_Sanity</b>  </a></td><td class="numi">1</td><td>1568948406085</td><td class="numi">11</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="5">FrameworkClasses.TestEngine</td><td><a href="#m1"><b>Scenarios</b>  </a></td><td class="numi">5</td><td>1569046579695</td><td class="numi">2367</td></tr><tr class="failedodd"><td><a href="#m2"><b>Scenarios</b>  </a></td><td class="numi">5</td><td>1569046579695</td><td class="numi">2367</td></tr><tr class="failedodd"><td><a href="#m3"><b>Scenarios</b>  </a></td><td class="numi">5</td><td>1569046579695</td><td class="numi">2367</td></tr><tr class="failedodd"><td><a href="#m4"><b>Scenarios</b>  </a></td><td class="numi">5</td><td>1569046579695</td><td class="numi">2367</td></tr><tr class="failedodd"><td><a href="#m5"><b>Scenarios</b>  </a></td><td class="numi">5</td><td>1569046579695</td><td class="numi">2367</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">FrameworkClasses.TestEngine:Product_Sanity</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th></tr>
-<tr class="param stripe"><td>[B, No, ScenarioB, c, d, NA]</td>
-</tr>
-<tr><td style="padding-left:3em" colspan="1">
-<p>Skipping this Test</p>
-FrameworkClasses.TestEngine.Product_Sanity(TestEngine.java:159)
-<br/>25 lines not shown
-</td></tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">FrameworkClasses.TestEngine:Product_Sanity</h2>
+<h2 id="m1">FrameworkClasses.TestEngine:Scenarios</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th></tr>
 <tr class="param stripe"><td>[A, Yes, ScenarioA, a, b, NA]</td>
 </tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.fail(Assert.java:53)
+<br/>at FrameworkClasses.TestEngine.Scenarios(TestEngine.java:143)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">FrameworkClasses.TestEngine:Scenarios</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[A, Yes, ScenarioA, a, b, NA]</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.fail(Assert.java:53)
+<br/>at FrameworkClasses.TestEngine.Scenarios(TestEngine.java:143)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">FrameworkClasses.TestEngine:Scenarios</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[B, Yes, ScenarioB, c, d, Fail]</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.fail(Assert.java:53)
+<br/>at FrameworkClasses.TestEngine.Scenarios(TestEngine.java:149)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">FrameworkClasses.TestEngine:Scenarios</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[A, Yes, ScenarioA, a, b, NA]</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.fail(Assert.java:53)
+<br/>at FrameworkClasses.TestEngine.Scenarios(TestEngine.java:143)
+<br/>25 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">FrameworkClasses.TestEngine:Scenarios</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th></tr>
+<tr class="param stripe"><td>[A, Yes, ScenarioA, a, b, NA]</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>null</p>
+junit.framework.Assert.fail(Assert.java:47)
+<br/>at junit.framework.Assert.fail(Assert.java:53)
+<br/>at FrameworkClasses.TestEngine.Scenarios(TestEngine.java:143)
+<br/>25 lines not shown
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>
