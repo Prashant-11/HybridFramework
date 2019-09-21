@@ -42,7 +42,7 @@ public class CustomReport implements ITestListener {
 		try {
 			FileInputStream file = new FileInputStream(new File("./Resources/Read_Write.xlsx"));
 			XSSFWorkbook wb = new XSSFWorkbook(file);
-			XSSFSheet sheet = wb.getSheetAt(2);
+			XSSFSheet sheet = wb.getSheetAt(0);
 			int Last = sheet.getLastRowNum();
 			int noofcol = sheet.getRow(0).getLastCellNum();
 			sheet.getRow(obj_TE.RowSetter).getCell(noofcol-1).setCellValue(status);

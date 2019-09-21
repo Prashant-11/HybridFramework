@@ -66,7 +66,7 @@ public class TestEngine
 		String[][] Arraydata = null;
 		XSSFSheet sh1;
 		sh1 = null;
-		sh1= wb.getSheetAt(2);
+		sh1= wb.getSheetAt(0);
 		int totalNoOfCols = sh1.getLastRowNum();
 		System.out.println("Last row count ++++ " + String.valueOf(totalNoOfCols));
 		System.out.println("Count of data-->"+totalNoOfCols);
@@ -110,7 +110,7 @@ public class TestEngine
 	
 	 @Test(dataProvider = "DP_Flow")
 	 //, retryAnalyzer=RetryAnalyzer.class)
-	 public void Product_Sanity(ArrayList<String> row) throws IOException, InterruptedException, AWTException 
+	 public void Scenarios(ArrayList<String> row) throws IOException, InterruptedException, AWTException 
 	 {				
 		System.out.println("Execution-->"+row.get(0));		
 		String RunStatus, Team, Scenerio, Location1, Location2, Srch_Param;
